@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"sla\startup_stm32f407xx.o"
+"sla\tracking.o"
+"sla\main.o"
+"sla\stm32f4xx_it.o"
+"sla\stm32f4xx_hal_msp.o"
+"sla\keyboard.o"
+"sla\stm32f4xx_hal_tim.o"
+"sla\stm32f4xx_hal_tim_ex.o"
+"sla\stm32f4xx_hal_uart.o"
+"sla\stm32f4xx_hal_rcc.o"
+"sla\stm32f4xx_hal_rcc_ex.o"
+"sla\stm32f4xx_hal_flash.o"
+"sla\stm32f4xx_hal_flash_ex.o"
+"sla\stm32f4xx_hal_flash_ramfunc.o"
+"sla\stm32f4xx_hal_gpio.o"
+"sla\stm32f4xx_hal_dma_ex.o"
+"sla\stm32f4xx_hal_dma.o"
+"sla\stm32f4xx_hal_pwr.o"
+"sla\stm32f4xx_hal_pwr_ex.o"
+"sla\stm32f4xx_hal_cortex.o"
+"sla\stm32f4xx_hal.o"
+"sla\stm32f4xx_hal_exti.o"
+"sla\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "SLA\SLA.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SLA.map" -o SLA\SLA.axf
